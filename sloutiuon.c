@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(void) {
 
@@ -53,5 +54,193 @@ int main(void) {
     // SALARY = worked_hours_number * hourly_amount;
     // printf("SALARY = U$ %.2f\n",SALARY);
 
-    return 0;
+//* Problem 1009 - Salary With Bonus
+    // double salary, sold_amount, salary_with_bonus;
+    // char employee_name;
+
+    // scanf("%s %lf %lf", &employee_name, &salary, &sold_amount);
+
+    // salary_with_bonus = ((sold_amount * 15) / 100) + salary;
+    // printf("TOTAL = R$ %.2lf\n", salary_with_bonus);
+
+//* Problem 1010 - Simple Calculate
+    // int code_of_product_1, code_of_product_2;
+    // int unit_of_product_1, unit_of_product_2;
+    // float price_of_product_1, price_of_product_2;
+
+    // scanf("%d %d %f", &code_of_product_1, &unit_of_product_1, &price_of_product_1);
+    // scanf("%d %d %f", &code_of_product_2, &unit_of_product_2, &price_of_product_2);
+
+    // float value_to_pay = (unit_of_product_1 * price_of_product_1) + (unit_of_product_2 * price_of_product_2);
+    // printf("VALOR A PAGAR: R$ %.2f\n", value_to_pay);
+
+//* Problem 1011 - Sphere
+    // double R, r, VOLUME, PI;
+    // PI = 3.14159;
+
+    // scanf("%lf", &r);
+    // R = (r * r * r);
+    // VOLUME = (4.0 / 3) * PI * R;
+    // printf("VOLUME = %.3lf\n", VOLUME);
+
+//* Problem 1012 - Area
+/*  const float PI = 3.14159f;
+    double A, B, C, TRIANGULO, CIRCULO, TRAPEZIO, QUADRADO, RETANGULO;
+
+    scanf("%lf %lf %lf", &A, &B, &C);
+
+    // a. the area of the rectangled triangle
+    TRIANGULO = (A * C) / 2;
+    // b. the area of the radius's circle
+    CIRCULO = PI * (C * C);
+    // c. the area of the trapezium
+    TRAPEZIO = ((A + B) / 2) * C;
+    // d. the area of ​​the square
+    QUADRADO = (B * B);
+    // e. the area of the rectangle
+    RETANGULO = (A * B);
+
+    printf("TRIANGULO: %.3lf\nCIRCULO: %.3lf\nTRAPEZIO: %.3lf\nQUADRADO: %.3lf\nRETANGULO: %.3lf\n", TRIANGULO, CIRCULO, TRAPEZIO, QUADRADO, RETANGULO); */
+
+//* Problem 1013 - The Greatest
+    //! using array
+    // int a, b, s;
+    // scanf("%d %d %d", &a, &b, &s);
+    // int arr[3] = {a, b, s};
+
+    // int i, n, Maior;
+    // n = sizeof(arr) / sizeof(arr[0]);
+    // Maior = arr[0];
+
+    // for (i = 0; i < n; i++)
+    // { 
+    //     if (arr[i] > Maior)
+    //     {
+    //         Maior = arr[i];
+    //     }
+    // }
+
+    // printf("%d eh o maior\n", Maior);
+
+    //! using condition
+    // int a, b, c, max_value;
+    // scanf("%d %d %d", a, b, c);
+    // max_value = a;
+    // if (max_value < b)
+    //     max_value = b;
+    // if (max_value < c)
+    //     max_value = c;
+    // printf("%d eh o maior", max_value);
+
+//* Problem 1014 - Consumption
+    // int X;
+    // float Y;
+    // scanf("%d %f", &X, &Y);
+    // printf("%.3f km/l\n", X / Y);
+
+//* Problem 1015 - Distance
+    // double x1, x2, y1, y2, distance;
+    // scanf("%lf %lf %lf %lf", &x1, &y1, &x2, &y2);
+
+    // distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    // printf("%.4lf\n", distance);
+
+//* Problem 1016 - Distance
+    // int m, minutos;
+    // scanf("%d", &m);
+
+    // minutos = m * 2;
+
+    // printf("%d minutos\n", minutos);
+
+//* Problem 1017 - Fuel Spent
+    // int hours, speed;
+    // float liter_for_km = 12.00;
+    // scanf("%d %d", &hours, &speed);
+
+    // float fuel = (hours * speed) / liter_for_km;
+    // printf("%.3f\n", fuel);
+
+//* Problem 1018 - Banknotes
+    // int N, handrad_notes, remain_notes;
+    // char str[] = "nota(s) de R$";
+
+    // scanf("%d", &N);
+    // printf("%d\n", N);
+    // handrad_notes = N / 100;
+    // printf("%d %s 100,00\n", handrad_notes, str);
+    // remain_notes = N % 100;
+    // printf("%d %s 50,00\n", remain_notes / 50, str);
+    // remain_notes %= 50;
+    // printf("%d %s 20,00\n", remain_notes / 20, str);
+    // remain_notes %= 20;
+    // printf("%d %s 10,00\n", remain_notes / 10, str);
+    // remain_notes %= 10;
+    // printf("%d %s 5,00\n", remain_notes / 5, str);
+    // remain_notes %= 5;
+    // printf("%d %s 2,00\n", remain_notes / 2, str);
+    // remain_notes %= 2;
+    // printf("%d %s 1,00\n", remain_notes, str);
+
+//* Problem 1019 - Time Conversion
+    // int hours, minutes, seconds, total_seconds;
+
+    // scanf("%d", &total_seconds);
+
+    // hours = total_seconds / 3600;
+    // minutes = (total_seconds % 3600) / 60;
+    // seconds = total_seconds % 60;
+
+    // printf("%d:%d:%d\n", hours, minutes, seconds);
+
+//* Problem 1020 - Age in Days
+    // int N, years, months, days;
+    // scanf("%d", &N);
+
+    // years = N / 365;
+    // N %= 365;
+    // months = N / 30;
+    // N %= 30;
+    // days = N;
+
+    // printf("%d ano(s)\n%d mes(es)\n%d dia(s)\n", years, months, days);
+
+//* Problem 1021 - Banknotes and Coins
+    // double N;
+    // int notes, coins;
+    // char str_notes[] = "nota(s) de R$";
+    // char str_coins[] = "moeda(s) de R$";
+
+    // scanf("%lf", &N);
+
+    // notes = N;
+    // coins = (N - notes) * 100;
+
+    // printf("NOTAS:\n");
+    // printf("%d %s 100.00\n", notes / 100, str_notes);
+    // notes %= 100;
+    // printf("%d %s 50.00\n", notes / 50, str_notes);
+    // notes %= 50;
+    // printf("%d %s 20.00\n", notes / 20, str_notes);
+    // notes %= 20;
+    // printf("%d %s 10.00\n", notes / 10, str_notes);
+    // notes %= 10;
+    // printf("%d %s 5.00\n", notes / 5, str_notes);
+    // notes %= 5;
+    // printf("%d %s 2.00\n", notes / 2, str_notes);
+
+    // printf("MOEDAS:\n");
+    // notes %= 2;
+    // printf("%d %s 1.00\n", notes, str_coins);
+    // printf("%d %s 0.50\n", coins / 50, str_coins);
+    // coins %= 50;
+    // printf("%d %s 0.25\n", coins / 25, str_coins);
+    // coins %= 25;
+    // printf("%d %s 0.10\n", coins / 10, str_coins);
+    // coins %= 10;
+    // printf("%d %s 0.05\n", coins / 5, str_coins);
+    // coins %= 5;
+    // printf("%d %s 0.01\n", coins, str_coins);
+
+return 0;
 }
