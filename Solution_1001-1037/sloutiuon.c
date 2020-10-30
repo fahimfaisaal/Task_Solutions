@@ -242,5 +242,46 @@ int main(void) {
     // coins %= 5;
     // printf("%d %s 0.01\n", coins, str_coins);
 
-return 0;
+//* Problem 1035 - Selection Test 1
+    // int A, B, C, D, CD_positive, CD_ab, Bc_Da;
+    // scanf("%d %d %d %d", &A, &B, &C, &D);
+
+    // CD_positive = C >= 0 && D >= 0;
+    // CD_ab = (C + D) > (A + B);
+    // Bc_Da = (B > C) && (D > A);
+    // A = A % 2 == 0;
+
+    // (A && CD_positive) && (CD_ab && Bc_Da) ?
+    //  printf("Valores aceitos\n") : printf("Valores nao aceitos\n");
+
+//* Problem 1036 - Bhaskara's Formula
+    // double a, b, c, R1, R2, imp_cal;
+    // scanf("%lf %lf %lf", &a, &b, &c);
+
+    // R1 = (-b + sqrt(pow(b, 2) - (4 * a * c))) / (2 * a);
+    // R2 = (-b - sqrt(pow(b, 2) - (4 * a * c))) / (2 * a);
+    // imp_cal = (pow(b, 2) - (4 * a * c)) < 0 || a == 0;
+
+    // (imp_cal) ? printf("Impossivel calcular\n")
+    //  : printf("R1 = %.5lf\nR2 = %.5lf\n", R1, R2);
+
+//* Problem 1037 - Interval
+    // float num;
+    // scanf("%f", &num);
+
+    // if (num < 0 || num > 100) {
+    //     printf("Fora de intervalo\n");
+    // }else {
+    //     if (num <= 25.00000) {
+    //         printf("Intervalo [0,25]\n");
+    //     }else if (num >= 25.00001 && num <= 50.0000000) {
+    //         printf("Intervalo (25,50]\n");
+    //     }else if (num >= 50.00001 && num <= 75.0000000) {
+    //         printf("Intervalo (50,75]\n");
+    //     }else if (num >= 75.00001 && num <= 100.0000000) {
+    //         printf("Intervalo (75,100]\n");
+    //     }
+    // }
+
+    return 0;
 }
