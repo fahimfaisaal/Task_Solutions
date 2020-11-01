@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+// #include <math.h>
 
 //* Implement of floor function
 float my_floor(float num) {
@@ -13,6 +13,7 @@ float my_ceil(float num) {
     float int_to_float, floating_num;
     int float_to_int = num;
     floating_num = (num - float_to_int);
+    
     if (floating_num > 0) {
         int_to_float = (float_to_int * 1.00) + 1.00;
     } else {
