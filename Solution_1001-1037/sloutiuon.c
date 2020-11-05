@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdbool.h>
 
 int main(void) {
 
@@ -282,6 +283,6 @@ int main(void) {
     //         printf("Intervalo (75,100]\n");
     //     }
     // }
-
+    
     return 0;
 }

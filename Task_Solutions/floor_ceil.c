@@ -25,12 +25,52 @@ float my_ceil(double num) {
     return int_to_float;
 }
 
-int main (void) {
-    float a = -145.100;
+void main() {
+/*     float a = -145.100;
 
     float get_floor = my_floor(a); //* also same output in builtin floor function
     printf("The floor number is = %f\n", get_floor);
 
     float get_ceil = my_ceil(a); //* also same output in builtin ceil function
-    printf("The ceil number is = %lf\n", get_ceil);
+    printf("The ceil number is = %lf\n", get_ceil); */
+
+//* Descending Order
+    int a, b, c;
+    printf("Input three Integer Number: \n");
+    scanf("%d %d %d", &a, &b, &c);
+    int Big = a, Medium = b, Small = c;
+
+   if (a <= b && a <= c) {
+       Small = a;
+
+       if (b > c) {
+           Medium = c;
+           Big = b;
+       } else {
+           Medium = b;
+           Big = c;
+       }
+   } else if (b <= a && b <= c) {
+       Small = b;
+
+       if (a > c) {
+           Medium = c;
+       } else {
+           Medium = a;
+           Big = c;
+       }
+   } else if (b >= a && b >= c) {
+       Big = b;
+
+       if (a > c) {
+           Medium = a;
+           Small = c;
+       } else {
+           Medium = c;
+           Small = a;
+       }
+   }
+
+   printf("Descending Order: %d %d %d\n", Big, Medium, Small);
+
 }
