@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 void main() {
 
     int line, space, star, number;
