@@ -1,5 +1,12 @@
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
+
+double taxes(double salary, int percentage) {
+    double tax = (salary * percentage) / 100.0;
+
+    return tax;
+}
 
 void main() {
 
@@ -111,5 +118,156 @@ void main() {
     //     printf("Nao sao Multiplos\n");
     // }
 
+//* Problem 1045 - Triangle Types
+    // double a, b, c, big;
 
+    // scanf("%lf %lf %lf", &a, &b, &c);    
+
+    // if (a < b) {
+    //     big = b;
+    //     b = a;
+    //     a = big;
+    // }
+    // if (a < c) {
+    //     big = c;
+    //     c = a; 
+    //     a = big; 
+    // }
+
+    // if (a > 0.0 && b > 0.0 && c > 0.0) {
+    //     if (a >= (b + c)) {
+    //         printf("NAO FORMA TRIANGULO\n");
+    //     } else if (pow(a, 2) == (pow(b, 2) + pow(c, 2))) {
+    //         printf("TRIANGULO RETANGULO\n");
+    //     } else if (pow(a, 2) > (pow(b, 2) + pow(c, 2))) {
+    //             printf("TRIANGULO OBTUSANGULO\n");                
+    //     } else if (pow(a, 2) < (pow(b, 2) + pow(c, 2))) {
+    //             printf("TRIANGULO ACUTANGULO\n");
+    //     }
+
+    //     if (a == b && b == c && c == a) {
+    //         printf("TRIANGULO EQUILATERO\n");
+    //     } else if (a == b || b == c || c == a) printf("TRIANGULO ISOSCELES\n");
+    // }
+
+//* Problem 1046 - Game Time
+    // int start, end, hours;
+
+    // scanf("%d %d", &start, &end);
+
+    // if ((start >= 0 && start < 24) && (end >= 0 && end < 24)) {
+
+    //     if (start == 0) start = 24;
+    //     if (end == 0) end = 24;
+
+    //     if (start < end) {
+    //         hours = end - start;
+    //     } else {
+    //         if (start >= 12)  hours = (end + 24) - start;        
+    //     }
+
+    //     printf("O JOGO DUROU %d HORA(S)\n", hours);
+    // }
+
+//* Problem 1047 - Game Time with Minutes
+
+
+//* Problem 1048 - Salary Increase
+
+    // double salary, salary_increase;
+    // int percentage;
+    // scanf("%lf", &salary);
+
+    // if (salary >= 0 && salary <= 400.00) percentage = 15;
+    // if (salary > 400.00 && salary <= 800.00) percentage = 12;
+    // if (salary > 800.00 && salary <= 1200.00) percentage = 10;
+    // if (salary > 1200.00 && salary <= 2000.00) percentage = 7;
+    // if (salary > 2000.00) percentage = 4;
+
+
+    // salary_increase = (salary * percentage) / 100;
+
+    // printf("Novo salario: %.2lf\nReajuste ganho: %.2lf\nEm percentual: %d %%\n", salary + salary_increase, salary_increase, percentage);
+
+//* Problem 1049 - Animal
+
+    // char str1[15] = "", str2[15] = "", str3[15] = "";
+
+    // scanf("%s\n%s\n%s", &str1, &str2, &str3);
+
+    //     if (!strcmp(str1, "vertebrado") || !strcmp(str1, "invertebrado")) {
+    //         if (!strcmp(str2, "ave")) {
+    //             !strcmp(str3, "carnivoro") ? printf("aguia\n") : printf("pomba\n");
+    //         } else if (!strcmp(str2, "mamifero")) {
+    //             !strcmp(str3, "onivoro") ? printf("homem\n") : printf("vaca\n");
+    //         } else if (!strcmp(str2, "inseto")) {
+    //             !strcmp(str3, "hematofago") ?  printf("pulga\n") : printf("lagarta\n");
+    //         } else if (!strcmp(str2, "anelideo")) {
+    //             !strcmp(str3, "hematofago") ? printf("sanguessuga\n") : printf("minhoca\n");
+    //         }
+    //     }
+
+//* Problem 1050 - DDD
+//     int num;
+//     scanf("%d", &num);
+
+//    if (num == 61) {
+//        printf("Brasilia\n");
+//    } else if (num == 71) {
+//        printf("Salvador\n");
+//    } else if (num == 11) {
+//        printf("Sao Paulo\n");
+//    } else if (num == 21) {
+//        printf("Rio de Janeiro\n");
+//    } else if (num == 32) {
+//        printf("Juiz de Fora\n");
+//    } else if (num == 19) {
+//         printf("Campinas\n");
+//    } else if (num == 27) {
+//        printf("Vitoria\n");
+//    } else if (num == 31) {
+//      printf("Belo Horizonte\n");
+//    } else {
+//        printf("DDD nao cadastrado\n");
+//    }
+
+//* Problem 1051 - Taxes
+    // double salary, cut_salary, tax = 0;
+    // scanf("%lf", &salary);
+
+    // salary -= 2000.00;
+
+    // if (salary <= 0) {        
+    //     printf("Isento\n");
+    // } else {
+    //     if (salary > 2500) {
+    //         cut_salary = salary - 2500;
+    //         tax += taxes(cut_salary, 28);
+    //         salary -= cut_salary;
+    //     }
+
+    //     if (salary >= 1500 || salary > 1000) {
+    //         cut_salary = salary - 1000;
+    //         tax += taxes(cut_salary, 18);
+    //         salary -= cut_salary;
+    //     }
+
+    //     if (salary <= 1000) tax += taxes(salary, 8);
+        
+
+    //     printf("R$ %.2lf\n", tax);
+    // }
+
+//* Problem 1059 - Even Numbers
+    // for (int i = 2; i <= 100; i += 2)  printf("%d\n", i);
+
+//* Problem 1060 - Positives Numbers
+    // float numbers[6];
+    // int count = 0;
+
+    // for (int i = 0; i < 6; i++) scanf("%f", &numbers[i]);
+
+    // for (int i = 0; i < 6; i++) if (numbers[i] >= 0) count++;
+
+    // printf("%d valores positivos\n", count);
 }

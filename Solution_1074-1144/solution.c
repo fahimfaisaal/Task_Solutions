@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void main() {
+int main() {
 //* Problem 1095 - Sequence IJ 1
     // int i = 1, j = 60;
 
@@ -44,4 +44,6 @@ void main() {
     //         condition_count++;
     //     }
     // }
+
+//* Problem 
 }
