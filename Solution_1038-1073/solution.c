@@ -173,7 +173,6 @@ void main() {
 
 
 //* Problem 1048 - Salary Increase
-
     // double salary, salary_increase;
     // int percentage;
     // scanf("%lf", &salary);
@@ -190,7 +189,6 @@ void main() {
     // printf("Novo salario: %.2lf\nReajuste ganho: %.2lf\nEm percentual: %d %%\n", salary + salary_increase, salary_increase, percentage);
 
 //* Problem 1049 - Animal
-
     // char str1[15] = "", str2[15] = "", str3[15] = "";
 
     // scanf("%s\n%s\n%s", &str1, &str2, &str3);
@@ -208,28 +206,28 @@ void main() {
     //     }
 
 //* Problem 1050 - DDD
-//     int num;
-//     scanf("%d", &num);
+    // int num;
+    // scanf("%d", &num);
 
-//    if (num == 61) {
-//        printf("Brasilia\n");
-//    } else if (num == 71) {
-//        printf("Salvador\n");
-//    } else if (num == 11) {
-//        printf("Sao Paulo\n");
-//    } else if (num == 21) {
-//        printf("Rio de Janeiro\n");
-//    } else if (num == 32) {
-//        printf("Juiz de Fora\n");
-//    } else if (num == 19) {
-//         printf("Campinas\n");
-//    } else if (num == 27) {
-//        printf("Vitoria\n");
-//    } else if (num == 31) {
-//      printf("Belo Horizonte\n");
-//    } else {
-//        printf("DDD nao cadastrado\n");
-//    }
+    // if (num == 61) {
+    //     printf("Brasilia\n");
+    // } else if (num == 71) {
+    //     printf("Salvador\n");
+    // } else if (num == 11) {
+    //     printf("Sao Paulo\n");
+    // } else if (num == 21) {
+    //     printf("Rio de Janeiro\n");
+    // } else if (num == 32) {
+    //     printf("Juiz de Fora\n");
+    // } else if (num == 19) {
+    //         printf("Campinas\n");
+    // } else if (num == 27) {
+    //     printf("Vitoria\n");
+    // } else if (num == 31) {
+    //     printf("Belo Horizonte\n");
+    // } else {
+    //     printf("DDD nao cadastrado\n");
+    // }
 
 //* Problem 1051 - Taxes
     // double salary, cut_salary, tax = 0;
@@ -265,9 +263,104 @@ void main() {
     // float numbers[6];
     // int count = 0;
 
-    // for (int i = 0; i < 6; i++) scanf("%f", &numbers[i]);
-
-    // for (int i = 0; i < 6; i++) if (numbers[i] >= 0) count++;
+    // for (int i = 0; i < 6; i++) {
+    //     scanf("%f", &numbers[i]);
+    //     numbers[i] >= 0 && count++;
+    // }
 
     // printf("%d valores positivos\n", count);
+
+//* Problem 1064 - Positives and Average
+    // float number[6], average = 0;
+    // int count = 0;
+
+    // for (int i = 0; i < 6; i++) {
+    //     scanf("%f", &number[i]);
+    //     if (number[i] >= 0) {
+    //         count++;
+    //         average += number[i];
+    //     }
+    // }
+
+    // average /= count;
+
+    // printf("%d valores positivos\n%.1f\n", count, average);
+
+//* Problem 1065 - Even Between five Numbers
+    // int numbers[5], count = 0;
+
+    // for (int i = 0; i < 5; i++) {
+    //     scanf("%d", &numbers[i]);
+    //     numbers[i] % 2 == 0 && count++;
+    // }  
+
+    // printf("%d valores pares\n", count);
+
+//* Problem 1066 - Even, Odd, Positive and Negative
+    // int numbers[5], count_even = 0, count_odd = 0, count_positive = 0, count_negative = 0;
+
+    // for (int i = 0; i < 5; i++) {
+    //     scanf("%d", &numbers[i]);
+
+    //     if (numbers[i] % 2 == 0) {
+    //         count_even++;
+    //     } else if (numbers[i] % 2 != 0) {
+    //         count_odd++;
+    //     }
+    // }
+
+    // for (int i = 0; i < 5; i++) {
+
+    //     if (numbers[i] > 0) {
+    //         count_positive++;
+    //     } else if (numbers[i] < 0) {
+    //         count_negative++;
+    //     }
+    // }
+
+    // printf("%d valor(es) par(es)\n%d valor(es) impar(es)\n%d valor(es) positivo(s)\n%d valor(es) negativo(s)\n", count_even, count_odd, count_positive, count_negative);
+
+//* Problem 1067 - Odd Numbers
+    // int n, i = 1;
+
+    // scanf("%d", &n);
+
+    // if (1 <= n <= 1000) for (; (n % 2 != 0) ? i <= n : i < n; i += 2)  printf("%d\n", i);
+
+//* Problem 1070 - Six Odd Numbers
+    // int n, i, count = 6;
+
+    // scanf("%d", &n);
+
+    // for (i = (n % 2 != 0) ? n : n + 1; 0 < count--; i += 2)  printf("%d\n", i);
+
+//* Problem 1071 - Sum of Consecutive odd number |
+    // int x, y, total = 0;
+
+    // scanf("%d\n%d", &x, &y);
+
+    // if (y > x) {
+    //     x += 1;
+    //     for (int i = x; i < y; i++) {
+    //         if (i % 2 != 0)  total += i;
+    //     }
+
+    // } else {
+    //     y += 1;
+    //     for (int i = y; i < x; i++) {
+    //         if (i % 2 != 0) total += i;
+    //     }
+    // }
+    // printf("%d\n", total);
+
+//* Problem 1073 - Even Square 
+    // int number;
+
+    // scanf("%d", &number);
+
+    // if (5 < number < 2000) {
+    //     for (int i = 2; i <= number; i += 2) {
+    //         printf("%d^2 = %d\n", i, i * i);
+    //     }
+    // }
 }
