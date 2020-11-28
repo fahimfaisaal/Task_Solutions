@@ -27,7 +27,7 @@ int main() {
         //* Validation of index numbers
         for (int i = 0; i < positionSize; i++) {
             if (indexNumber == position[i]) {
-                printf("You've already assigned this index number -> %d with value -> %d, Please assign a new index number.\n",indexNumber, arr[position[i]]);
+                printf("You've already assigned this index number -> %d with value -> %d, Please assign a new index number.\n\n",indexNumber, arr[position[i]]);
                 validationIndex++;
             }
         }
