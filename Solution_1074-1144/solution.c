@@ -203,6 +203,7 @@ int main() {
     //         printf("Decrescente\n");
     //     }
     // }
+
 //* Problem 1114 - Fixed Password
     // int pass = 2002, in_pass;
 
@@ -232,4 +233,63 @@ int main() {
     //     }
     //     i++;
     // }
+
+//* Problem 1117 - Score Validation
+    // float x, y;
+
+    // while (1) {
+    //     scanf("%f", &x);
+
+    //     if (x >= 0 && x <= 10) {
+            
+    //         while (1) {
+    //             scanf("%f", &y);
+
+    //             if(y >= 0 && y <= 10) {
+    //                 printf("media = %.2f\n", (x + y) / 2);
+    //                 break;
+    //             }
+    //             printf("nota invalida\n");
+    //         }
+
+    //         break;
+    //     }
+
+    //     printf("nota invalida\n");
+    // }
+
+//* Problem 1118 - Several Scores with Validation
+    // double x, y;
+    // int in;
+
+    // while (1) {
+    //     int count = 0;
+    //     scanf("%lf", &x);
+
+    //     if (x >= 0 && x <= 10) {
+    //         while (1) {
+    //             scanf("%lf", &y);
+    //             if (y >= 0 && y <= 10) {
+    //                 printf("media = %.2lf\n", (x + y) / 2);
+    //                 break;
+    //             }
+    //             printf("nota invalida\n");
+    //         }
+            
+    //         while (1) {
+    //             printf("novo calculo (1-sim 2-nao)\n");
+    //             scanf("%d", &in);
+
+    //             if (in == 1 || in == 2) break;
+    //         }
+            
+    //     } else {
+    //         printf("nota invalida\n");
+    //     }
+
+    //     if (in == 2) break;
+    // }
+
+//* Problem 1113 - Grenais
+
 }
