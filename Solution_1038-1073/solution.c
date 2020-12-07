@@ -170,7 +170,7 @@ void main() {
     // }
 
 //* Problem 1047 - Game Time with Minutes
-
+    
 
 //* Problem 1048 - Salary Increase
     // double salary, salary_increase;
@@ -352,6 +352,23 @@ void main() {
     //     }
     // }
     // printf("%d\n", total);
+
+//* Problem 1072 - Interval 2
+
+    // int n, x, countIn = 0, countOut = 0, i = 0;
+
+    // scanf("%d", &n);
+
+    // while (i < n) {
+    //     scanf("%d", &x);
+
+    //     x >= 10 && x <= 20 ? countIn++ : countOut++;
+
+    //     i++;
+    // }
+
+    // printf("%d in\n%d out\n", countIn, countOut);
+
 
 //* Problem 1073 - Even Square 
     // int number;

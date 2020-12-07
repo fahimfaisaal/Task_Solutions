@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <memory.h> 
 
 int main() {
 //* Problem 1074 - Even or Odd
@@ -290,6 +289,33 @@ int main() {
     //     if (in == 2) break;
     // }
 
-//* Problem 1113 - Grenais
+//* Problem 1131 - Grenais
+    // unsigned int Inter = 0, Gremio = 0, Draw = 0, test = 0, I, G, looBreaker;
+
+    // while (looBreaker != 2) {
+    //     scanf("%u %u", &I, &G);
+
+    //     if (I == G)  Draw++;
+    //     else if (I < G) Gremio++;
+    //     else Inter++;        
+
+    //     test++;
+
+    //     while (1) {
+    //         printf("Novo grenal (1-sim 2-nao)\n");
+    //         scanf("%u", &looBreaker);
+
+    //         if (looBreaker == 1 || looBreaker == 2) break;            
+    //     }
+    // }
+
+    // printf("%u grenais\n", test);
+    // printf("Inter:%u\n", Inter);
+    // printf("Gremio:%u\n", Gremio);
+    // printf("Empates:%u\n", Draw);
+
+    // if (Inter > Gremio) printf("Inter venceu mais\n");
+    // else if (Gremio > Inter) printf("Gremio venceu mais\n");
+    // else printf("Não houve vencedor\n");
 
 }

@@ -6,7 +6,7 @@ int main() {
     int indexNumber;
     int value;
 
-    while (1)  {
+    while (1) {
 
         int isValidIndex = 0;
         
