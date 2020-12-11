@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
+void main() {
 //* Problem 1074 - Even or Odd
     // int length = 0;
     // char *odd_even;

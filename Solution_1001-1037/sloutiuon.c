@@ -2,7 +2,7 @@
 #include <math.h>
 #include <stdbool.h>
 
-int main(void) {
+void main() {
 
 //* Problem 1001 - Extremely Basic
     // int A, B, X;
@@ -283,6 +283,4 @@ int main(void) {
     //         printf("Intervalo (75,100]\n");
     //     }
     // }
-    
-    return 0;
 }

@@ -4,7 +4,7 @@ void main() {
 //* Problem 1145 - Logical Sequence 2
     // int x, y, i = 1, j = 0;
 
-    // scanf("%d %d", &x, &y);
+    // scanf("%d %d", &x, &y); 
 
     // if (x < y && 1 < x < 20 && x < y < 100000) {
 
@@ -35,7 +35,25 @@ void main() {
     //     }
     // }
 
-//* Problem 1150 - Exceeding Z
+//* Problem 1149 - Summing Consecutive Integers
+    // int a, n, sum = 0;
+
+    // scanf("%d", &a);
+
+    // while(1) {
+    //     scanf("%d", &n);
+
+    //    if (n > 0) break;
+    // }
+
+    // for (int i = 0; i < n; i++) {
+    //     sum += a;
+    //     a++;
+    // }
+
+    // printf("%d\n", sum);
+
+    //* Problem 1150 - Exceeding Z
     // int x, z, count = 0, sum = 0;
 
     // scanf("%d", &x);
@@ -154,6 +172,20 @@ void main() {
 
     //     printf("%d\n", sum);
     // }
+
+//* Problem 1160 - Population Increase
+//     int test_cases, population_A, population_B;
+//    double growing_1, growing_2;
+
+//     if (test_cases >= 1 && test_cases <= 3000) while(test_cases--) {
+//         scanf("%d %d %lf %lf", &population_A, &population_B, growing_1, growing_2);
+
+//         if (population_A < population_B && population_A <= 100 && population_A < 1000000 && population_B <= 100 && population_B <= 1000000 && growing_1 >= 1.0 && growing_1 <= 10.0 && growing_2 >= 1.0 && growing_2 <= 10.0) {
+
+//         } else {
+//             printf("Mais de 1 seculo.\n");
+//         }
+//     }
 
 //* Problem 1164 - Perfect Number
     // int n, x, j, i = 0, sum;
@@ -296,6 +328,17 @@ void main() {
     // }
 
 //* Problem 1179 - Array Fill IV
+    // int input_arr[15];
+    // int par[5], impar[5], count_even = 0, count_odd = 0, count = 3, condition = 0;
+
+    // for(int i = 0; i < 15; i++) scanf("%d", &input_arr[i]);
+
+    // for(int i = 0; i < 15; i++) {
+    //     if (input_arr[i] % 2 == 0) count_even++;    
+    //     else count_odd++;    
+    // }
+
+    // printf("%d %d\n", count_even, count_odd);
 
 //* Problem 1180 - Lowest Number and Position
     // int n;
@@ -339,6 +382,5 @@ void main() {
     //     sum_of_average == 'S' && printf("%.1f\n", sum);
     //     sum_of_average == 'M'&& printf("%.1f\n", sum / 12.00);     
     // }
-
 
 }

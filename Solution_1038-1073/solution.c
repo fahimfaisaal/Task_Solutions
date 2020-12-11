@@ -170,7 +170,29 @@ void main() {
     // }
 
 //* Problem 1047 - Game Time with Minutes
-    
+    // int start_hour, start_minute, end_hour, end_minute, hour, minute;
+
+    // scanf("%d %d %d %d", &start_hour, &start_minute, &end_hour, &end_minute);
+
+    // hour = end_hour - start_hour;
+    // minute = end_minute - start_minute;
+
+    // if (end_minute < start_minute) {
+    //     minute = end_minute + 60 - start_minute;
+        
+    //     end_hour < start_hour || (end_hour == start_hour && end_minute < start_minute)
+    //     ? (hour = end_hour + 23 - start_hour)
+    //     : (hour = end_hour - 1 - start_hour);
+
+    // } else if (end_hour < start_hour) {
+    //     hour = end_hour + 24 - start_hour;
+    // }
+
+    // if (hour == 0 && minute == 0)
+    //     hour = 24;
+
+    // printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", hour, minute);
+
 
 //* Problem 1048 - Salary Increase
     // double salary, salary_increase;
@@ -354,7 +376,6 @@ void main() {
     // printf("%d\n", total);
 
 //* Problem 1072 - Interval 2
-
     // int n, x, countIn = 0, countOut = 0, i = 0;
 
     // scanf("%d", &n);
