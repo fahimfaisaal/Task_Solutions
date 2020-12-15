@@ -17,7 +17,7 @@ void main() {
     //     for (int k = 0; k < 12; k++) sum += array[k][column];
         
     //     sum_of_average == 'S' && printf("%.1f\n", sum);
-    //     sum_of_average == 'M'&& printf("%.1f\n", sum / 12.00);     
+    //     sum_of_average == 'M' && printf("%.1f\n", sum / 12.00);     
     // }
 
 //* Problem 1183 - Above the Main Diagonal
@@ -39,7 +39,7 @@ void main() {
     // }
         
     // sum_of_average == 'S' && printf("%.1f\n", sum);
-    // sum_of_average == 'M'&& printf("%.1f\n", sum / average_count);
+    // sum_of_average == 'M' && printf("%.1f\n", sum / average_count);
 
 //* Problem 1184 - Below the Main Diagonal
     // float array[12][12], sum = 0, average_count = 0;
@@ -60,7 +60,7 @@ void main() {
     // }
         
     // sum_of_average == 'S' && printf("%.1f\n", sum);
-    // sum_of_average == 'M'&& printf("%.1f\n", sum / average_count);
+    // sum_of_average == 'M' && printf("%.1f\n", sum / average_count);
 
 //* Problem 1185 - Above the Secundary Diagonal
     // float array[12][12], sum = 0, average_count = 0;
@@ -83,7 +83,7 @@ void main() {
     // }
         
     // sum_of_average == 'S' && printf("%.1f\n", sum);
-    // sum_of_average == 'M'&& printf("%.1f\n", sum / average_count);
+    // sum_of_average == 'M' && printf("%.1f\n", sum / average_count);
 
 //* Problem 1186 - Below the Secundary Diagonal
     // float array[12][12], sum = 0, average_count = 0;
@@ -104,7 +104,7 @@ void main() {
     // }
         
     // sum_of_average == 'S' && printf("%.1f\n", sum);
-    // sum_of_average == 'M'&& printf("%.1f\n", sum / average_count);
+    // sum_of_average == 'M' && printf("%.1f\n", sum / average_count);
 
 //* Problem 1187 - Top Area
     // double array[12][12], sum = 0;
@@ -128,7 +128,7 @@ void main() {
     // }
 
     //     sum_of_average == 'S' && printf("%.1lf\n", sum);
-    //     sum_of_average == 'M'&& printf("%.1lf\n", sum / count);
+    //     sum_of_average == 'M' && printf("%.1lf\n", sum / count);
 
 //* Problem 1188 - Inferior Area
     // double array[12][12], sum = 0;
@@ -152,7 +152,7 @@ void main() {
     // }
 
     //     sum_of_average == 'S' && printf("%.1lf\n", sum);
-    //     sum_of_average == 'M'&& printf("%.1lf\n", sum / count);
+    //     sum_of_average == 'M' && printf("%.1lf\n", sum / count);
 
 //* Problem 1189 - Left area
     // double array[12][12], sum = 0;
@@ -182,5 +182,107 @@ void main() {
     // }
 
     // sum_of_average == 'S' && printf("%.1lf\n", sum);
-    // sum_of_average == 'M'&& printf("%.1lf\n", sum / count);
+    // sum_of_average == 'M' && printf("%.1lf\n", sum / count);
+
+//* Problem 1190 - Right Area
+    // double array[12][12], sum = 0;
+    // int max_1 = 10, max_2 = 6, count = 0;
+    // char sum_of_average;
+
+    // scanf("%c", &sum_of_average);
+
+    // for (int i = 0; i < 12; i++) {
+    //     for (int j = 0; j < 12; j++) {
+    //         scanf("%lf", &array[i][j]);
+    //     }
+    // }
+
+    // for (int i = 1; i < 6; i++) {
+    //     for (int j = 11; j > max_1; j--) {
+    //         sum += array[i][j];
+    //         count++;
+    //     }
+
+    //     for (int k = 11; k > max_2; k--) {
+    //         sum += array[i + 5][k];
+    //         count++;
+    //     }
+    //     max_1--;
+    //     max_2++;
+    // }
+
+    // sum_of_average == 'S' && printf("%.1lf\n", sum);
+    // sum_of_average == 'M' && printf("%.1lf\n", sum / count);
+
+//* Problem 1435 - Square Matrix I (not solved)
+    // int n = 1;
+
+    // while (n) {
+    //     scanf("%d", &n);
+
+    //     if (n > 0 && n <= 100) {
+
+    //         for (int i = 0; i < n; i++) {
+
+    //             for (int j = 0; j < n; j++) {
+
+    //                 if (j == n - 1)
+    //                     printf(" %d*\n", j + 1);
+    //                 else
+    //                     printf(" %d   ", j + 1);
+    //             }
+    //         }
+
+    //         printf("\n\n");
+    //     }
+
+    // }
+
+
+
+//* Problem 1589 - Bob Conduit
+    // int test, r1, r2;
+
+    // scanf("%d", &test);
+
+    // while (test--) {
+    //     scanf("%d %d", &r1, &r2);
+
+    //     printf("%d\n", r1 + r2);
+    // }
+
+//* Problem 1759 - Ho Ho Ho
+    // int n;
+
+    // scanf("%d", &n);
+
+    // if (n > 0 && n < 1000000) {
+    //     for (int i = 0; i < n; i++) {
+    //         if (i == n - 1) printf("Ho!\n");
+    //         else printf("Ho ");
+    //     }
+    // }
+
+//* Problem 1789 - The Race of Slugs
+    // int n, slug, max;
+    
+    // while (scanf("%d", &n) != EOF) {
+
+    //     if (n >= 1 && n <= 500) {
+
+    //         for (int i = 0; i < n; i++) {
+    //             scanf("%d", &slug);
+
+    //             if (!i)  max = slug;
+
+    //             if (slug > max) max = slug; 
+
+    //         }
+
+    //         if (max < 10) printf("1\n");
+    //         else if (max >= 10 && max < 20) printf("2\n");
+    //         else printf("3\n");
+    //     }
+    // }
+
 }
