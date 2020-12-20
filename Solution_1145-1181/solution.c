@@ -303,23 +303,20 @@ void main() {
     // }
     
 //* Problem: 1176 (Fibonacci Array) by hm azijul
-    int i, N, X;
-    unsigned long long int arr[61];
-    arr[0] = 0;
-    arr[1] = 1;
+    // int i, N, X;
+    // unsigned long long int arr[61];
+    // arr[0] = 0;
+    // arr[1] = 1;
 
-    for (i = 2; i <= 60; i++)
-    {
-        arr[i] = arr[i - 1] + arr[i - 2];
-    }
+    // for (i = 2; i <= 60; i++) {
+    //     arr[i] = arr[i - 1] + arr[i - 2];
+    // }
 
-    scanf("%d", &N);
-    while (N--)
-    {
-        scanf("%d", &X);
-        printf("Fib(%d) = %lld\n", X, arr[X]);
-    }
-    
+    // scanf("%d", &N);
+    // while (N--) {
+    //     scanf("%d", &X);
+    //     printf("Fib(%d) = %lld\n", X, arr[X]);
+    // }
     
 //* Problem 1177 - Array Fill II
     // unsigned int array[1000], T, i, j;
