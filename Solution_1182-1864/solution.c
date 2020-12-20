@@ -1,4 +1,22 @@
 #include <stdio.h>
+#include <string.h>
+
+int get_result(char *x, char *y) {
+    if (!strcmp(x, y)) return 2;
+    else if (!strcmp(x, "tesoura")) {
+        if (!strcmp(y, "papel") || !strcmp(y, "lagarto")) return 1;
+    } else if (!strcmp(x, "papel")) {
+        if (!strcmp(y, "pedra") || !strcmp(y, "Spock")) return 1;
+    } else if (!strcmp(x, "pedra")) {
+        if (!strcmp(y, "lagarto") || !strcmp(y, "tesoura")) return 1;
+    } else if (!strcmp(x, "lagarto")) {
+        if (!strcmp(y, "Spock") || !strcmp(y, "papel")) return 1;
+    } else if (!strcmp(x, "Spock")) {
+         if (!strcmp(y, "tesoura") || !strcmp(y, "pedra")) return 1;
+    }
+
+    return 0;
+}
 
 void main() {
 //* Problem 1182 - Column in Array
@@ -17,7 +35,7 @@ void main() {
     //     for (int k = 0; k < 12; k++) sum += array[k][column];
         
     //     sum_of_average == 'S' && printf("%.1f\n", sum);
-    //     sum_of_average == 'M' && printf("%.1f\n", sum / 12.00);     
+    //     sum_of_average == 'M' && printf("%.1f\n", sum / 12.00);
     // }
 
 //* Problem 1183 - Above the Main Diagonal
@@ -293,4 +311,19 @@ void main() {
     //     }
     // }
 
+//* Problem 1828 - Bazinga!
+    // int test_count, result;
+    // char a[8], b[8];
+
+    // scanf("%d", &test_count);
+
+    // if (test_count <= 100) for (int i = 1; i <= test_count; i++)  {
+
+    //     scanf("%s %s", &a, &b);
+    //     result = get_result(a, b);
+
+    //     if (!result) printf("Caso #%d: Raj trapaceou!\n", i);
+    //     else if (result == 1) printf("Caso #%d: Bazinga!\n", i);
+    //     else printf("Caso #%d: De novo!\n", i);
+    // }
 }
