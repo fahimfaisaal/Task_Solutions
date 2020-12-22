@@ -232,7 +232,7 @@ void main() {
     // sum_of_average == 'S' && printf("%.1lf\n", sum);
     // sum_of_average == 'M' && printf("%.1lf\n", sum / count);
 
-//* Problem 1435 - Square Matrix I (not solved)
+//! Problem 1435 - Square Matrix I (not solved)
     // int n = 1;
 
     // while (n) {
@@ -325,5 +325,35 @@ void main() {
     //     if (!result) printf("Caso #%d: Raj trapaceou!\n", i);
     //     else if (result == 1) printf("Caso #%d: Bazinga!\n", i);
     //     else printf("Caso #%d: De novo!\n", i);
+    // }
+
+//! Problem 1837 - Preface (Not Solved)
+    // int a, b, q, r;
+
+    // scanf("%d %d", &a, &b);
+
+    // if (-1000 <= a && b <= 1000) {
+
+    //     q = a / b;
+    //     r = a % b;
+
+    //     if (r < 0) {
+    //         if (q < 0) q--;
+    //         if (q > 0) q++; 
+        
+    //         r = a - (b * q);  
+    //     }
+
+    //     printf("%d %d\n", q, r);
+    // }
+
+//* Problem 1864 - Our Days Are Never Coming Back
+    // int n;
+    // char quote[34] = "LIFE IS NOT A PROBLEM TO BE SOLVED";
+
+    // scanf("%d", &n);
+    // if (n > 0 && n <= 34) for (int i = 0; i < n; i++) {
+    //     if (i == n - 1) printf("%c\n", quote[i]);
+    //     else printf("%c", quote[i]);
     // }
 }
