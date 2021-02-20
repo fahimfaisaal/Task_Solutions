@@ -5,8 +5,7 @@ const correctTitle = str =>
             correctTitle += word.toLowerCase()
         } else {
             for (let i = 0; i < word.length; i++)
-                if (!i) correctTitle += word[i].toUpperCase()
-                else correctTitle += word[i].toLowerCase()
+                correctTitle += (!i) ? word[i].toUpperCase() : word[i].toLowerCase()
         }
         correctTitle += ' '
 
