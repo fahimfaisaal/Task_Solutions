@@ -4,8 +4,11 @@ const correctTitle = str =>
         if (/and|the|in|of/i.test(word)) {
             correctTitle += word.toLowerCase()
         } else {
-            for (let i = 0; i < word.length; i++)
-                correctTitle += (!i) ? word[i].toUpperCase() : word[i].toLowerCase()
+            for (let i = 0; i < word.length; i++) {
+                correctTitle += !i
+                    ? word[i].toUpperCase()
+                    : word[i].toLowerCase()
+            }
         }
         correctTitle += ' '
 
