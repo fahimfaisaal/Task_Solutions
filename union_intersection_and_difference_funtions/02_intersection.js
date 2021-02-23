@@ -13,15 +13,8 @@ function intersection(...sets) {
     const firstSet = [...sets.shift()]
 
     return firstSet.reduce((intersectionSet, firstSetEl) => {
-        let isFound = true
-
-        sets.forEach(set => {
-            if (!set.has(firstSetEl)) {
-                isFound = false
-            }
-        })
-
-        isFound && intersectionSet.add(firstSetEl)
+        sets.every(set => set.has(firstSetEl)) && intersectionSet.add(firstSetEl)
+        
         return intersectionSet
     }, new Set())
 }
