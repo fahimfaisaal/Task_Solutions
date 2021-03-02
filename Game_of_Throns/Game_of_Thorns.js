@@ -1,13 +1,14 @@
 console.clear()
+
 const correctTitle = str => 
     str.split(' ').reduce((correctTitle, word) => {
         if (/and|the|in|of/i.test(word)) {
             correctTitle += word.toLowerCase()
         } else {
-            for (let i = 0; i < word.length; i++) {
-                correctTitle += !i
-                    ? word[i].toUpperCase()
-                    : word[i].toLowerCase()
+            for (let letter = 0; letter < word.length; letter++) {
+                correctTitle += !letter
+                    ? word[letter].toUpperCase()
+                    : word[letter].toLowerCase()
             }
         }
         correctTitle += ' '
@@ -17,5 +18,6 @@ const correctTitle = str =>
 
 const str = 'JOn SaNS, tHe kInG oF tHe CounTrY'
 const result = correctTitle(str)
-console.log(str)
+
+console.log('Input ->', str)
 console.log('Replace ->', result)
