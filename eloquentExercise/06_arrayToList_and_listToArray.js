@@ -1,5 +1,6 @@
 console.clear()
 
+//* Use eval
 function arrayToList(arr) {
     const len = arr.length
     let list = {},
@@ -20,6 +21,7 @@ function arrayToList(arr) {
     return list
 }
 
+//* Use eval
 function listToArray(list) {
     let arr = [],
         valueStr = "list"
@@ -27,16 +29,31 @@ function listToArray(list) {
     while (true) {
         arr.push(eval(`${valueStr}['value']`))
 
-        if (eval(`${valueStr}['rest']`) === null) break
+        if (!eval(`${valueStr}['rest']`)) break
         valueStr += "['rest']"
     }
 
     return arr
 }
 
-const arr = [4, 5, 6]
-const list = arrayToList(arr)
-const array = listToArray(list)
+//* use recursion & currying
+function arrToList(arr, list = new Object()) {
+    return (rest = null) => {
+        const arrayToList = arrToList(arr, list)
 
-console.log(list)
+        if (!arr.length) return list
+        if (!rest) list.value = arr.shift()
+
+        return arrayToList(list.rest = {
+            value: arr.pop(),
+            rest: rest
+        })
+    }
+}
+
+const arr = [4, 5, 6]
+const list = arrToList(arr)
+const array = listToArray(list())
+
+console.log(list())
 console.log(array)
