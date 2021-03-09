@@ -1,6 +1,6 @@
 console.clear()
 
-//* Use eval
+//* Solution-1 Use eval
 function arrayToList(arr) {
     const len = arr.length
     let list = {},
@@ -21,6 +21,21 @@ function arrayToList(arr) {
     return list
 }
 
+//* Solution-2 use recursion
+function arrToList(arr, list = new Object()) {
+    return (rest = null) => {
+        const arrayToList = arrToList(arr, list)
+
+        if (!arr.length) return list
+        if (!rest) list.value = arr.shift()
+
+        return arrayToList(list.rest = {
+            value: arr.pop(),
+            rest: rest
+        })
+    }
+}
+
 //* Use eval
 function listToArray(list) {
     let arr = [],
@@ -34,21 +49,6 @@ function listToArray(list) {
     }
 
     return arr
-}
-
-//* use recursion & currying
-function arrToList(arr, list = new Object()) {
-    return (rest = null) => {
-        const arrayToList = arrToList(arr, list)
-
-        if (!arr.length) return list
-        if (!rest) list.value = arr.shift()
-
-        return arrayToList(list.rest = {
-            value: arr.pop(),
-            rest: rest
-        })
-    }
 }
 
 const arr = [4, 5, 6]
