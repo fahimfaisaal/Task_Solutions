@@ -55,5 +55,5 @@ const arr = [4, 5, 6]
 const list = arrToList(arr)
 const array = listToArray(list())
 
-console.log(list())
+console.log(JSON.stringify(list(), null, 2))
 console.log(array)
