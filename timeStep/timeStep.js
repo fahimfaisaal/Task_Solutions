@@ -11,6 +11,13 @@ function looping(start, end, cb, step) {
   }
 }
 
+/**
+ * @param {number} start 
+ * @param {number} end 
+ * @param {function} cb 
+ * @param {number} step in ms
+ * @return {undefined}
+ */
 function print(start, end, cb, step = 1000) {
   looping(start, end, cb, step);
 
