@@ -51,7 +51,7 @@ function listToArray(list) {
     return arr
 }
 
-const arr = [4, 5, 6]
+const arr = [1, 2, 3, 4, 5]
 const list = arrToList(arr)
 const array = listToArray(list())
 
