@@ -5,7 +5,7 @@ function looping(start, end, cb, step) {
     let i = start, second = 1000;
     i < end; i++, second += step
   ) {
-    setTimeout(() => {
+    setTimeout( _=> {
       cb(i);
     }, second);
   }
@@ -21,7 +21,7 @@ function looping(start, end, cb, step) {
 function print(start, end, cb, step = 1000) {
   looping(start, end, cb, step);
 
-  setInterval(() => {
+  setInterval( _=> {
     looping(start, end, cb, step);
   }, end * step);
 }
