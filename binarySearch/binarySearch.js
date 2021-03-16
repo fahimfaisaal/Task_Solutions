@@ -1,5 +1,14 @@
 console.clear()
 
+/**
+ * @title Binary Search
+ * @param {any} arr 
+ * @param {any} el 
+ * @param {function} callBack 
+ * @param {number} left 
+ * @param {number} right 
+ * @returns number
+ */
 function binarySearch(arr, el, callBack, left = 0, right = arr.length - 1) {
     if (left <= right) {
         const mid = parseInt((left + right) / 2)
