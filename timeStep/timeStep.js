@@ -1,16 +1,5 @@
 const arr = ["fahim", "faisal", "shakil", "easin", "turky"];
 
-function looping(start, end, cb, delay) {
-  for (
-    let i = start, second = 1000;
-    i < end; i++, second += delay
-  ) {
-    setTimeout( _=> {
-      cb(i);
-    }, second);
-  }
-}
-
 /**
  * @param {number} start 
  * @param {number} end 
@@ -18,19 +7,22 @@ function looping(start, end, cb, delay) {
  * @param {number} delay in ms
  * @return {undefined}
  */
-function print(start, end, cb, delay = 1000) {
-  looping(start, end, cb, delay);
+function infinity(start, end, cb, delay = 1000) {
+  for (let i = start; i < end; i++) {
+      setTimeout( _=> {
+        cb(i);
 
-  setInterval( _=> {
-    looping(start, end, cb, delay);
-  }, end * delay);
+        i === end - 1 &&
+          infinity(start, end, cb, delay);
+      }, delay * (!start ? i + 1 : i));
+  }
 }
 
-print(
+infinity(
   0,
   arr.length,
-  i => {
-    console.log(arr[i]);
+  index => {
+    console.log(arr[index]);
   },
   2000
 );
