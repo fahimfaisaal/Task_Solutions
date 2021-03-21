@@ -5,16 +5,16 @@ const arr = ["fahim", "faisal", "shakil", "easin", "turky"];
  * @param {number} end 
  * @param {function} cb 
  * @param {number} delay in ms
- * @return {undefined}
+ * @returns {undefined}
  */
 function infinity(start, end, cb, delay = 1000) {
-  for (let i = start; i < end; i++) {
+  for (let i = start, j = 1; i < end; i++) {
       setTimeout( _=> {
         cb(i);
 
         i === end - 1 &&
           infinity(start, end, cb, delay);
-      }, delay * (!start ? i + 1 : i));
+      }, delay * j++);
   }
 }
 
@@ -24,5 +24,5 @@ infinity(
   index => {
     console.log(arr[index]);
   },
-  2000
+  1000
 );
