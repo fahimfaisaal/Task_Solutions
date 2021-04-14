@@ -23,15 +23,17 @@ function arrayToList(arr) {
 
 //* Solution-2 use recursion
 function arrToList(arr, list = new Object()) {
-    return (rest = null) => {
+    return (next = null) => {
         const arrayToList = arrToList(arr, list)
 
-        if (!arr.length) return list
-        if (!rest) list.value = arr.shift()
+        if (!arr.length) return {
+            head: list
+        }
+        if (!next) list.value = arr.shift()
 
-        return arrayToList(list.rest = {
+        return arrayToList(list.next = {
             value: arr.pop(),
-            rest: rest
+            next: next
         })
     }
 }
@@ -53,7 +55,6 @@ function listToArray(list) {
 
 const arr = [1, 2, 3, 4, 5]
 const list = arrToList(arr)
-const array = listToArray(list())
+const array = JSON.stringify(list(), null, 2);
 
-console.log(JSON.stringify(list(), null, 2))
 console.log(array)
