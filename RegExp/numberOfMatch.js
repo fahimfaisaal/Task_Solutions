@@ -5,12 +5,12 @@
  * @returns number
  */
 function numberOfMatch(mainStr, searchStr = null) {
-    const regex = new RegExp(searchStr, 'g');
+    const regex = new RegExp("\\s(" + searchStr + ")\\s", 'gu');
     const match = mainStr.match(regex);
     
     return match && searchStr ? match.length : 0;
 }
 
-const str = 'hello, I am fahim faisal.';
+const str = 'hello, I am fahim faisal. আমি';
 
-console.log(numberOfMatch(str, 'a'));
+console.log(numberOfMatch(str, 'I am fahim faisal.'));
