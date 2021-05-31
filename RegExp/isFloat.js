@@ -4,7 +4,7 @@
  * @returns boolean
  */
 function isFloat(number) {
-    const floatRegex = /^(\d+)\.(\d+)$/;
+    const floatRegex = /^(\d+)?\.(\d+)$/;
 
     if (
         floatRegex.test(number) &&
@@ -17,5 +17,6 @@ function isFloat(number) {
 }
 
 console.log(isFloat(19));
-console.log(isFloat(19.2));
+console.log(isFloat(123.2332));
+console.log(isFloat(.2332));
 console.log(isFloat('19.2'));
