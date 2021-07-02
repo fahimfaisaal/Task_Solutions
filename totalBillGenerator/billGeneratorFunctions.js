@@ -14,7 +14,7 @@ function getDiscount(price, discount) {
  * @returns {Number}
  */
 function getVat(price, vat) {
-  return price * (vat / 100)
+  return price * (vat / 100);
 }
 
 /**
@@ -22,8 +22,8 @@ function getVat(price, vat) {
  * @returns {Number} 
  */
 function getNumberOfProducts(products) {
-    return products.
-        reduce((totalProducts, product) => totalProducts + product.quantity, 0)
+  return products.
+    reduce((totalProducts, product) => totalProducts + product.quantity, 0);
 }
 
 /**
@@ -32,12 +32,12 @@ function getNumberOfProducts(products) {
  */
 function getTotalBill(products) {
   return products
-        .reduce((totalBill, product) => {
-            const { price, discount, vat, quantity } = product,
-                bill = (getDiscount(price, discount) + getVat(price, vat)) * quantity;
+    .reduce((totalBill, product) => {
+      const { price, discount, vat, quantity } = product,
+        bill = (getDiscount(price, discount) + getVat(price, vat)) * quantity;
             
-            return totalBill + bill;
-        }, 0)
+      return totalBill + bill;
+    }, 0);
 }
 
 const products = [
@@ -51,11 +51,11 @@ const products = [
     price: 4999,
     quantity: 1,
     discount: 20,
-    vat: 4.1
+    vat: 4.5
   },
   {
     price: 300,
-    quantity:3,
+    quantity: 3,
     discount: 0,
     vat: 0
   },

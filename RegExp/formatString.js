@@ -7,8 +7,13 @@ function formatString(string) {
         },
         {
             //* middle symbols
-            regex: /(\w+)(\s+)?([%&\*\+<>\|~\/\-])(\s+)?(\w+)/g,
-            replace: ' $1 $3 $5 '
+            regex: /(\w+)\s*([%&\*\+<>\|~\/=\-])\s*(\w+)/g,
+            replace: ' $1 $2 $3 '
+        },
+        {
+            //* middle symbols on word
+            regex: /([a-z]+)\s*([\_\-])\s*([a-z]+)/g,
+            replace: ' $1$2$3 '
         },
         {
             //* end symbols
@@ -30,8 +35,8 @@ function formatString(string) {
 }
 
 const crushedStr = `   Hello  ,        Everyone    i am(  fahim
-    faisal        )    and    i'm    22  . who    are     you    ? i have 1000 $  you know   ? 34>10
-   my user name      @    fahimfaisal `;
+    faisal        )    and    i'm    22  . who   are     you    ? i have 1000 $      you know   ? 34 >10
+   my user name      @    fahimfaisal fahim    -    faisal  10-20`;
 
 
 const formatStr = formatString(crushedStr);

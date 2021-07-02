@@ -1,20 +1,20 @@
 /**
  * validate rgba format
- * @param {String} color 
+ * @param {String} color
  * @returns boolean
  */
 function isRgba(color) {
     const rgbaRegExp = /^(rgb)a?\(\s*(([0-9]{1,2}|1[0-9]{1,2}|2[0-4][0-9]|25[0-5])\s*,\s*){2}([0-9]{1,2}|1[0-9]{1,2}|2[0-4][0-9]|25[0-5])\s*(,\s*(0?(\.\d+)?|1(\.0+)?))?\s*\)$/;
-  
+
     if (rgbaRegExp.test(color)) {
         return true;
     }
-  
+
     return false;
 }
 
 //# valid RGB
-console.log(isRgba('rgba(116, 185, 255, 1)')); //* true
+console.log(isRgba('rgba(116, 185, 255, 0)')); //* true
 console.log(isRgba('rgb(112,122,112)')); //* true
 console.log(isRgba('rgba(12, 122,0)')); //* true
 console.log(isRgba('rgba(12, 122, 0, 1)')); //* true
