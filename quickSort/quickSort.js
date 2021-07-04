@@ -20,7 +20,7 @@ function partition(array, pivot, direction, len = array.length, partitionArr = [
 
 function quickSort(array = [], len = array.length) {
     if (len < 2) {
-        return array;
+        return [...array];
     }
 
     const pivot = array.splice(parseInt(len / 2), 1);
