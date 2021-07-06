@@ -33,5 +33,5 @@ function quickSort(array = [], len = array.length) {
 
 const arr = [-2, 5, 1, 2, 3, 7, 5, -1, -5, 100];
 
-console.log('Unsorted Array:', arr)
-console.log('Sorted Array (Quick Sort):', quickSort(arr))
+console.log('Unsorted Array:', arr);
+console.log('Sorted Array (Quick Sort):', quickSort(arr));
