@@ -1,7 +1,11 @@
 console.clear();
 
-function isObject(obj) {
-    if (obj instanceof Object) {
+function isObject(any) {
+    if (
+        typeof any !== 'function' &&
+        !Array.isArray(any) &&
+        any instanceof Object
+    ) {
         return true;
     }
 
