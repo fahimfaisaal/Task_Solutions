@@ -2,11 +2,19 @@ console.clear();
 
 /**
  * Ascii characters generator by start and end length
- * @param {number} start
- * @param {number} end
- * @returns {string}
+ * @param {number} start - default start from ascii char code 0
+ * @param {number} end - default end with ascii char code 255
+ * @param {number} step - default sequence step of ascii char is 1
+ * @returns {string} - return the linear ascii characters
  */
 function asciiCharGenerator(start = 0, end = 255, step = 1) {
+    const isValidRange = param => param > -1 && param < 256;
+
+    // validation check
+    start = isValidRange(start) ? start : 0;
+    end = isValidRange(end) ? end : 255;
+    step = isValidRange(step) ? step : 1;
+
     let characters = '';
 
     for (let i = start; i < end + 1; i += step) {
@@ -38,9 +46,10 @@ function randomCharGenerator(asciiChars, length, token = '') {
 }
 
 /**
- * Generate a token object
- * @param {number} stringLength 
- * @returns {Object}
+ * Generate a token
+ * @param {string} variant - options low, mid, hard (default - mid)
+ * @param {number} stringLength - length of token
+ * @returns {string} - token
  */
 function generateToken(variant = 'mid', stringLength) {
     // tokens variants
