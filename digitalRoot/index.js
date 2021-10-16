@@ -1,3 +1,5 @@
+console.clear()
+
 const doublingSequence = (base, length) => {
     const numbers = [Math.pow(base, 0)];
 
@@ -15,7 +17,7 @@ const doublingSequence = (base, length) => {
  * @returns {Object}
  */
 const digitalRoot = (num) => {
-    if (num === undefined) {
+    if (typeof num !== 'number') {
         return {};
     }
 
@@ -35,9 +37,9 @@ const digitalRoot = (num) => {
 
     if (rootObj.result > 9) {
         // if result is greater then 9 then again split the number
-        const splitResult = digitalRoot(rootObj.result);
+        const splitResult = digitalRoot(+rootObj.result);
         rootObj.result = splitResult.result;
-        rootObj.calculation += (' ' + splitResult.calculation); // join the new calculation string with previous calculation
+        rootObj.calculation += ' ' + splitResult.calculation; // join the new calculation string with previous calculation
 
         return rootObj;
     }
