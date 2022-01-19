@@ -35,5 +35,5 @@ function listener2() {
  * #2 hello from promise 2
  */
 
-listener1()
-listener2()
+listener1();
+listener2();
