@@ -6,16 +6,13 @@ const a = new Set([1, 2, 3]),
 
 /**
  * @title implementation of union function
- * @param {Set} sets 
+ * @param {Array} sets 
  * @return {new Set}
  */
 function union(...sets) {
-    return sets.reduce((unionSet, set) => {
-        for (let value of set) {
-            unionSet.add(value)
-        }
-        return unionSet
-    }, new Set())
+    return new Set(
+        sets.reduce((flatArray, set) => flatArray.concat(Array.from(set)), [])
+    )
 }
 
 const u = union(a, b, c)
